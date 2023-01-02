@@ -84,7 +84,7 @@ const songs = [
 ]
 
 Array.from(document.getElementsByClassName('songItem')).forEach((element, i)=>{
-    element.getElementsByTagName('')[0].src = songs[i].poster;
+    element.getElementsByTagName('img')[0].src = songs[i].poster;
     element.getElementsByTagName('h5')[0].innerHTML = songs[i].songName;
 })
 
